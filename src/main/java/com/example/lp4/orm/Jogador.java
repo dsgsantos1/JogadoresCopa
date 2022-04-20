@@ -59,7 +59,7 @@ public class Jogador {
 
 	public Jogador(@NotNull @Size(min = 2, max = 75) String name, @NotNull @Size(min = 2, max = 20) String nickname,
 			@NotNull @Size(min = 2, max = 20) String squad, @NotNull @Size(min = 2, max = 20) String team,
-			Date birthday, @NotNull int number) {
+			@NotNull Date  birthday, @NotNull int number) {
 		super();
 		this.name = name;
 		this.nickname = nickname;
