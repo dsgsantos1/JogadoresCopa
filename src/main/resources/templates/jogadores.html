@@ -36,6 +36,11 @@
             <td><span th:text="${jogador.getAge()}"> Idade </span></td>
             <td><span th:text="${jogador.squad}"> Seleção </span></td>
             <td><span th:text="${jogador.team}"> Time </span></td>
+            <td>
+                <a class="btn btn-outline-primary btn-sm" 
+                   th:href="@{/jogador/editar/{id}(id=${jogador.id})}">
+                   Editar</a>
+            </td>
         </tr>
     </tbody>
 </table>
