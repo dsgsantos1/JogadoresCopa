@@ -20,17 +20,12 @@ import com.example.lp4.repository.JogadorRepository;
 import com.example.lp4.orm.Jogador;
 
 @Controller
+@RequestMapping("/jogador")
 public class JogadorController {
 	
 	@Autowired
 	JogadorRepository jogadorRepository;
 	
-	@RequestMapping(value = "/")
-	public String index(Model model) {
-		model.addAttribute("jogadores", jogadorRepository.findAll());
-		return "index";
-	}
-
 	@GetMapping("/listar")
 	public String listarJogadores(Model model) {
 		model.addAttribute("jogadores", jogadorRepository.findAll());
