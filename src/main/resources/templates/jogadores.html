@@ -23,7 +23,9 @@
             <th> Número </th>
             <th> Idade </th>
             <th> Seleção </th>
-            <th> Time </th>            
+            <th> Time </th>
+            <th> Apelido </th>    
+            <th> </th>        
         </tr>
     </thead>
     <tbody>
@@ -31,7 +33,8 @@
             <td colspan="2"> Sem jogadores </td>
         </tr>
         <tr th:each="jogador : ${jogadores}">
-            <td><span th:text="${jogador.name}"> Nome </span></td>
+            <td><span th:text="${jogador.name}"> Nome Completo </span></td>
+            <td><span th:text="${jogador.nickname}"> Apelido </span></td>
             <td><span th:text="${jogador.number}"> Número </span></td>
             <td><span th:text="${jogador.getAge()}"> Idade </span></td>
             <td><span th:text="${jogador.squad}"> Seleção </span></td>
