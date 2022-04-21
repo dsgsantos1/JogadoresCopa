@@ -20,7 +20,7 @@
 		
 		<h1 class = "title"> Cadastro de Jogadores</h1>
 		
-		<form action="#" th:action="@{/salvar}" th:object="${jogador}" method="post">
+		<form action="#" th:action="@{/jogador/editar/{id}(id=${jogador.id})}" th:object="${jogador}" method="post">
 		
 			<div class="row g-3">
 			  	<div class="col">
