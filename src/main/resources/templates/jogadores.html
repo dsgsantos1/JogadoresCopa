@@ -20,12 +20,13 @@
     <thead>
         <tr>
             <th> Nome </th>
+            <th> Apelido </th> 
             <th> Número </th>
             <th> Idade </th>
             <th> Seleção </th>
-            <th> Time </th>
-            <th> Apelido </th>    
-            <th> </th>        
+            <th> Time </th>   
+            <th> </th>
+            <th> </th>    
         </tr>
     </thead>
     <tbody>
@@ -43,6 +44,15 @@
                 <a class="btn btn-outline-primary btn-sm" 
                    th:href="@{/jogador/editar/{id}(id=${jogador.id})}">
                    Editar</a>
+            </td>
+            <td>
+           		<a class="btn btn-outline-danger btn-sm" 
+				   th:href="@{/jogador/apagar/{id}(id=${jogador.id})}"
+				   th:data-confirm-delete="|O jogador ${jogador.name} será apagado!|"
+  				   onclick="if (!confirm(this.getAttribute('data-confirm-delete'))) return false">
+				   Apagar
+				</a>
+           		
             </td>
         </tr>
     </tbody>

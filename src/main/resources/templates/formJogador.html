@@ -20,7 +20,7 @@
 		
 		<h1 class = "title"> Cadastro de Jogadores</h1>
 		
-		<form action="#" th:action="@{/salvar}" th:object="${jogador}" method="post" class="bg-dark px-3 py-5 rounded" style="width: 50vw">
+		<form action="#" th:action="@{/jogador/salvar}" th:object="${jogador}" method="post" class="bg-success px-3 py-5 rounded" style="width: 50vw">
 		
 			<div style="margin: 0">
 			  	<div class="col">
@@ -50,7 +50,7 @@
 			</div>
 			
 			<div class = "buttons" style="margin: 6px 0 0 0">
-				<a href="/salvar">
+				<a href="/jogador/salvar">
 			 		<button type="submit" class="btn btn-primary btn-lg btn-block">Salvar</button>
 			 	</a>
 	    	</div>
