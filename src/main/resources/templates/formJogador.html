@@ -20,9 +20,9 @@
 		
 		<h1 class = "title"> Cadastro de Jogadores</h1>
 		
-		<form action="#" th:action="@{/salvar}" th:object="${jogador}" method="post">
+		<form action="#" th:action="@{/salvar}" th:object="${jogador}" method="post" class="bg-dark px-3 py-5 rounded" style="width: 50vw">
 		
-			<div class="row g-3 bg-danger">
+			<div style="margin: 0">
 			  	<div class="col">
 			    	<input type="text" class="form-control" placeholder="Nome" aria-label="First name" th:field="*{name}">
 			    	<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span><br/>
@@ -35,9 +35,6 @@
 			    	<input type="date" class="form-control" th:field="*{birthday}" th:placeholder="Data">
 			    	<span th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></span><br/>
 			  	</div>
-			</div>
-			
-			<div class="row g-3">
 			  	<div class="col">
 			    	<input type="text" class="form-control" placeholder="Time" th:field="*{team}">
 			    	<span th:if="${#fields.hasErrors('team')}" th:errors="*{team}"></span><br/>
@@ -52,7 +49,7 @@
 			  	</div>
 			</div>
 			
-			<div class = "buttons">
+			<div class = "buttons" style="margin: 6px 0 0 0">
 				<a href="/salvar">
 			 		<button type="submit" class="btn btn-primary btn-lg btn-block">Salvar</button>
 			 	</a>

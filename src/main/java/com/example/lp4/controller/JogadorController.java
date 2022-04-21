@@ -20,6 +20,7 @@ import com.example.lp4.repository.JogadorRepository;
 import com.example.lp4.orm.Jogador;
 
 @Controller
+@RequestMapping("/")
 public class JogadorController {
 	
 	@Autowired
