@@ -8,12 +8,20 @@
 </head>
 <body>
 
-    <nav tf:frament="nav">
+    <nav tf:frament="nav" class="menu-bar">
         <ul>
-            <li>
-                Ola
-            </li>
-            <li>Ola</li>
+            <a th:href="@{/}">
+                <li>Home</li>
+            </a>
+            <a th:href="@{/jogador/listar}">
+                <li>Jogadores</li>
+            </a>
+            <a th:href="@{/jogador/adicionar}">
+                <li>Adicionar</li>
+            </a>
+            
+            
+            <!-- <li class="login">Log in</li> -->
         </ul>
     </nav>
 
