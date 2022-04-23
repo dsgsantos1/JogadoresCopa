@@ -46,6 +46,8 @@ body{
 
 #title{
 	text-align: center;
+	text-transform: uppercase;
+	margin-top: 1rem;
 }
 
 .buttons{
@@ -61,8 +63,36 @@ button{
 	width: 500px;
 }
 
+
+.conteudo{
+	display: flex;
+	margin: 2rem;
+	align-items: center;
+	/* justify-content:space-between; */
+
+}
+
+.conteudo .text img{
+	width: 10rem;
+	height: 10rem;
+}
+.conteudo h2{
+	text-transform: uppercase;
+	max-width: 20rem;
+	font-size: 1.6rem;
+	text-indent: 0%;
+}
+
+.conteudo p{
+	/* text-transform: uppercase; */
+	max-width: 20rem;
+	/* font-size: 1.6rem; */
+	text-indent: 0%;
+}
+
 img{
 	margin-top: 2rem;
+	
 
 }
 
@@ -77,6 +107,8 @@ form{
 	justify-content: center;
 	align-items: center;
 	width: 20rem;
+	margin-left: 18rem;
+	
 }
 
 img{

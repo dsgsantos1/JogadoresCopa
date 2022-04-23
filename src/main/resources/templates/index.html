@@ -19,7 +19,7 @@
     
     <div th:insert="fragments/publicaNavBar :: nav"></div>
 
-   	<div class="container">
+   	<!-- <div class="container"> -->
  	<h1 id = "title">Jogadores da Copa do Mundo</h1>
  	
 <!--  	
@@ -36,16 +36,23 @@
     	
     
     </div> -->
-   	
-   	<div class="images">
-        <img class="messi"  th:src = "@{/img/messi-argentina-2.png}">
-        <img th:src = "@{/img/cr7-portugal.png}">
-        <img th:src = "@{/img/neymar-brasil.png}">
+   	<div class="conteudo">
+
+        <div class="text">
+            <!-- <img th:src="@{/img/cupIcon.png}" alt=""> -->
+            <h2>Os melhores do mundo aqui</h2>
+            <p>Cadastre os melhores jogadores de cada nação do mundo</p>
+        </div>
+
+        <div class="images">
+            <img class="messi"  th:src = "@{/img/messi-argentina-2.png}">
+            <img th:src = "@{/img/cr7-portugal.png}">
+            <img th:src = "@{/img/neymar-brasil.png}">
+        </div>
     </div>
-  
    	
     
-</div>
+<!-- </div> -->
 
 </body>
 </html>
