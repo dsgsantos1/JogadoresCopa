@@ -22,6 +22,7 @@ a{
 	text-decoration: none;
 	list-style: none;
 	font-size: 1.6rem;
+	border-radius: 0.3rem;
 }	
 
 .menu-bar a{
@@ -62,11 +63,35 @@ button{
 
 img{
 	margin-top: 2rem;
+
 }
 
 
 form{
-	margin-top:3rem;
+	margin-top:1.5rem;
+	padding-bottom: 0%;
+}
+
+.images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
+}
+
+img{
+	height: 25rem;
+	filter: drop-shadow(9px 0px 5px #000000);
+}
+
+.messi{
+	/* width: 240px; */
+
+}
+
+img{
+	/* height: 50rem; */
+	width: 100%;
 }
 
 .menu-bar ul li:hover{

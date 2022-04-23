@@ -55,7 +55,7 @@ public class JogadorController {
         } 
 		Jogador jogador = jogadorVelho.get();
 	    model.addAttribute("jogador", jogador); // lançar o objeto
-	    return "/auth/user/user-editar-jogador";
+	    return "/auth/user/userEditarJogador";
 	}
 	
 	@PostMapping("/editar/{id}")
@@ -63,7 +63,7 @@ public class JogadorController {
 			@Valid Jogador jogador, BindingResult result) {
 		if (result.hasErrors()) {
 	    	jogador.setId(id);
-	        return "/auth/user/user-editar-jogador";
+	        return "/auth/user/userEditarJogador";
 	    }
 	    jogadorRepository.save(jogador);
 	    return "redirect:/jogador/listar";
